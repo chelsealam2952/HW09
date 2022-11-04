@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lam HW09B Exercise 1</title>
+  <link href="/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <a href="/">Link to Main Page</a>
+  <form>
+    <h1>Order Form</h1>
+    <p>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required>
+      <span id="username"></span>
+    </p>
+    <p>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required placeholder="name@domain">
+      <span id="userEmail"></span>
+    </p>
+    <p>
+      Payment Type: <br>
+      <input type="radio" name="paymentType" id="cash" value="CSH" checked>
+      <label for="cash">Cash</label> <br>
+      <input type="radio" name="paymentType" id="creditcard" value="CCR">
+      <label for="creditcard">Credit Card</label><br>
+
+      <input type="radio" name="paymentType" id="googlepay" value="GOOGL">
+      <label for="googlepay">Google pay</label><br>
+
+      <input type="radio" name="paymentType" id="applepay" value="APPL">
+      <label for="googlepay">Apple Pay</label><br>
+
+    </p>
+    <p>
+
+      <input type="checkbox" name="promotion" id="confirmation">
+      <label for="promotion">Sign me up for special promotions</label><br>
+
+    </p>
+    <p>
+      <label for="location">Preferred Location: </label>
+      <select name="location" id="location" <option value="LA" selected>Los Angeles</option>
+        <option value="LA">Los Angeles</option>
+        <option value="OC">Orange Country</option>
+        <option value="Ri">Riverside</option>
+        <option value="SD">San Diego</option>
+      </select>
+    </p>
+
+    <input type="submit" value="Submit">
+    <input type="submit" value="Cancel">
+  </form>
+
+  <p id="result" ></p>
+
+    <script src="/ex1.js"></script>
+</body>
+
+</html>
